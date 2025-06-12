@@ -105,18 +105,35 @@
       font-family: 'Gotham-Ultra', sans-serif;
     }
 
-    .redes {
-      margin-top: 400px;
-      font-size: 16px;
+    .botones {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      z-index: 5;
     }
 
-    .redes span {
-      margin: 0 10px;
+    .botones a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-indent: -9999px;
     }
 
-    .web {
-      margin-top: 10px;
-      font-weight: bold;
+    .web-link {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px;
+      height: 30px;
+      z-index: 5;
+      text-indent: -9999px;
     }
 
     @media screen and (max-width: 600px) {
@@ -130,6 +147,20 @@
 
       .logo img {
         width: 70%;
+      }
+
+      .botones {
+        gap: 10px;
+      }
+
+      .botones a {
+        width: 24px;
+        height: 24px;
+      }
+
+      .web-link {
+        width: 240px;
+        height: 24px;
       }
     }
   </style>
@@ -154,18 +185,21 @@
           QUE TENEMOS PARA VOS
         </p>
       </div>
-    </div>
 
-    <div class="redes">
-      <span>Instagram</span>
-      <span>YouTube</span>
-      <span>Facebook</span>
-    </div>
+      <!-- Botones sobre los íconos -->
+      <div class="botones">
+        <a href="https://instagram.com/sinteplast" target="_blank" aria-label="Instagram">Instagram</a>
+        <a href="https://youtube.com/sinteplast" target="_blank" aria-label="YouTube">YouTube</a>
+        <a href="https://facebook.com/sinteplast" target="_blank" aria-label="Facebook">Facebook</a>
+      </div>
 
-    <div class="web">WWW.SINTEPLAST.COM.AR</div>
+      <!-- Botón invisible sobre el texto del sitio web -->
+      <a class="web-link" href="https://www.sinteplast.com.ar" target="_blank" aria-label="Sitio Web">Sinteplast</a>
+    </div>
   </div>
 </body>
 </html>
+
 
 </html>
 
