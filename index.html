@@ -4,30 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flyer Sinteplast</title>
-
   <style>
-    /* Fuente Gotham */
     @font-face {
-      font-family: 'Gotham';
-      src: url('GothamThin.woff2') format('woff2'),
-           url('GothamThin.woff') format('woff');
-      font-weight: 300;
+      font-family: 'Gotham-Bold';
+      src: url('Gotham-Bold.woff2') format('woff2'),
+           url('Gotham-Bold.woff') format('woff');
+      font-weight: bold;
       font-style: normal;
     }
 
     @font-face {
-      font-family: 'Gotham';
-      src: url('Gotham-Bold.woff2') format('woff2'),
-           url('Gotham-Bold.woff') format('woff');
-      font-weight: 700;
+      font-family: 'Gotham-Thin';
+      src: url('GothamThin.woff2') format('woff2'),
+           url('GothamThin.woff') format('woff');
+      font-weight: 100;
       font-style: normal;
     }
 
     body {
       margin: 0;
-      font-family: 'Gotham', sans-serif;
       background-color: #ffffff;
       text-align: center;
+      font-family: 'Gotham-Thin', sans-serif;
     }
 
     .contenedor {
@@ -39,6 +37,7 @@
     .fondo img {
       width: 100%;
       height: auto;
+      max-width: 600px;
       display: block;
     }
 
@@ -81,21 +80,34 @@
       top: 20px;
       left: 50%;
       transform: translateX(-50%);
-      color: white;
-      font-size: 22px;
-      font-weight: 300;
       width: 80%;
+      color: white;
+      text-align: center;
+    }
+
+    .texto-placa p {
+      margin: 0;
       line-height: 1.4;
     }
 
-    .texto-placa strong {
-      font-weight: 700;
+    .texto-placa p:first-child {
+      font-family: 'Gotham-Bold', sans-serif;
+      font-size: 26px;
+    }
+
+    .texto-placa p:last-child {
+      font-family: 'Gotham-Thin', sans-serif;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .texto-placa span {
+      font-family: 'Gotham-Bold', sans-serif;
     }
 
     .redes {
       margin-top: 400px;
       font-size: 16px;
-      font-weight: 300;
     }
 
     .redes span {
@@ -104,12 +116,16 @@
 
     .web {
       margin-top: 10px;
-      font-weight: 700;
+      font-weight: bold;
     }
 
     @media screen and (max-width: 600px) {
-      .texto-placa {
-        font-size: 18px;
+      .texto-placa p:first-child {
+        font-size: 22px;
+      }
+
+      .texto-placa p:last-child {
+        font-size: 14px;
       }
 
       .logo img {
@@ -131,9 +147,12 @@
     <div class="placa-con-texto">
       <img src="placa_texto.png" alt="Placa de texto" />
       <div class="texto-placa">
-        <strong>¡GRACIAS POR VISITARNOS!</strong><br />
-        NO DEJES DE DESCUBRIR LAS <strong>INFINITAS POSIBILIDADES</strong><br />
-        QUE TENEMOS PARA VOS
+        <p>¡GRACIAS POR <br> VISITARNOS!</p>
+        <p>
+          NO DEJES DE DESCUBRIR LAS <br>
+          <span>INFINITAS POSIBILIDADES</span><br>
+          QUE TENEMOS PARA VOS
+        </p>
       </div>
     </div>
 
@@ -146,6 +165,8 @@
     <div class="web">WWW.SINTEPLAST.COM.AR</div>
   </div>
 </body>
+</html>
+
 </html>
 
 
