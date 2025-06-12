@@ -4,10 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flyer Sinteplast</title>
+
   <style>
+    /* Fuente Gotham */
+    @font-face {
+      font-family: 'Gotham';
+      src: url('GothamThin.woff2') format('woff2'),
+           url('GothamThin.woff') format('woff');
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'Gotham';
+      src: url('Gotham-Bold.woff2') format('woff2'),
+           url('Gotham-Bold.woff') format('woff');
+      font-weight: 700;
+      font-style: normal;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Gotham', sans-serif;
       background-color: #ffffff;
       text-align: center;
     }
@@ -65,7 +83,7 @@
       transform: translateX(-50%);
       color: white;
       font-size: 22px;
-      font-weight: bold;
+      font-weight: 700;
       width: 80%;
       text-shadow: 1px 1px 2px black;
     }
@@ -73,6 +91,7 @@
     .redes {
       margin-top: 400px; /* espacio forzado */
       font-size: 16px;
+      font-weight: 300;
     }
 
     .redes span {
@@ -81,7 +100,7 @@
 
     .web {
       margin-top: 10px;
-      font-weight: bold;
+      font-weight: 700;
     }
 
     @media screen and (max-width: 600px) {
@@ -124,3 +143,4 @@
   </div>
 </body>
 </html>
+
